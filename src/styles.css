@@ -1,0 +1,292 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6891a8; /* Set background color */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  background-image: url("https://img.freepik.com/free-photo/top-view-desk-with-frame-laptop_23-2148821815.jpg?size=626&ext=jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+.custom-navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 20px;
+  color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+.img-style {
+  height: 70px;
+  width: 180px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition for brand */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 100px;
+  transition: color 0.3s; /* Smooth color transition for links */
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: white;
+}
+
+/* Blog Post Intro on Home Page */
+
+.fade-in {
+  text-align: center;
+  color: black;
+}
+
+.blog-intro {
+  background-color: rgb(84, 150, 122);
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and box-shadow transition */
+  width: 60%;
+  box-sizing: border-box;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s; /* Smooth transform and opacity transition */
+}
+
+.blog-intro:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-intro h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgba(178, 224, 49, 0.959);
+}
+
+.blog-intro p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: rgb(241, 147, 7);
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.read-more:hover {
+  background-color: seagreen;
+}
+
+/* About Page styles */
+.about-title {
+  font-size: 32px;
+  margin-top: 20px;
+  text-emphasis: initial;
+  text-align: center;
+  color: rgb(235, 13, 150);
+}
+
+.about-us {
+  color: rgb(245, 65, 41);
+}
+.about-modify {
+  color: rgb(154, 204, 39);
+  font-size: 25px;
+  width: 50%;
+  margin-left: 300px;
+}
+
+.blog-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-preview {
+  flex: 1;
+  max-width: 40%;
+  background-color: rgb(204, 198, 112);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and box-shadow transition */
+}
+
+.blog-preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-preview h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-preview p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgb(182, 51, 51);
+}
+
+.read-more {
+  display: inline-block;
+  background-color: rgb(241, 147, 7);
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.read-more:hover {
+  background-color: #007acc;
+}
+
+/* Contact Page styles */
+.contact-title {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(250, 24, 54);
+}
+
+.contact-info {
+  background-color: rgb(223, 124, 185);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s; /* Smooth transform and opacity transition */
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Added missing semicolon */
+}
+
+/* Default styles */
+/* ... */
+
+/* Media query for screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  /* Adjust font-size, width, and margin-left for mobile screens */
+  .about-modify {
+    font-size: 20px; /* Example font size for mobile */
+    width: 100%; /* Example width for mobile */
+    margin-left: 0; /* Example margin-left for mobile */
+  }
+}
+
+/* Media query for screens between 768px and 1024px (Tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust font-size, width, and margin-left for tablets */
+  .about-modify {
+    font-size: 22px; /* Example font size for tablets */
+    width: 80%; /* Example width for tablets */
+    margin-left: 100px; /* Example margin-left for tablets */
+  }
+}
+
+/* Media query for screens larger than 1024px (Desktop) */
+@media (min-width: 1025px) {
+  /* Adjust font-size, width, and margin-left for desktops */
+  .about-modify {
+    font-size: 25px; /* Example font size for desktops */
+    width: 50%; /* Example width for desktops */
+    margin-left: 300px; /* Example margin-left for desktops */
+  }
+}
+
+/* Media query for screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on mobile */
+    text-align: center; /* Center-align links on mobile */
+    margin-right: 170px; /* Remove right margin on mobile */
+  }
+  .nav-link {
+    color: rgb(215, 248, 123);
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    margin-left: 100px;
+    transition: color 0.3s; /* Smooth color transition for links */
+  }
+  .contact-info {
+    background-color: rgb(223, 124, 185);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transform and opacity transition */
+  }
+
+  .custom-navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px 20px;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+    width: 100%;
+  }
+  .blog-intro {
+    width: 90%;
+    margin: 80px auto;
+  }
+  .blog-preview {
+    max-width: 95%;
+  }
+}
